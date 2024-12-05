@@ -93,6 +93,8 @@ body{
 }
 
 .project-item{
+    width: 300px; /* Fijar un ancho para todos los artículos */
+    min-height: 350px; /* Asegurar una altura mínima */
     flex-grow: 1;
     background: white;
     border-radius: 10px;
@@ -138,6 +140,6 @@ input[type="button"]{
 
 }
 
-.edit:hover {
+.descrip:hover {
     background-color: rgb(58, 162, 162);
 }
