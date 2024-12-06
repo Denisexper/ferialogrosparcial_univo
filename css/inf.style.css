@@ -1,0 +1,72 @@
+body{
+    background: #d1defa;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*ALINEAR BODY*/
+
+    text-align: center;
+    padding: 0px;
+    margin:0px;
+}
+
+.layout{
+    width: 100%;
+    height: auto;
+
+
+    display: grid;
+    grid-template-areas: 
+
+
+        /*NUMERO DE COLUMNAS DE CADA CLASE
+         DEL GRID TEMPLATE AREAS
+        */
+        "header header header header"
+        
+
+    ;
+
+    /*DIMENSIONES DE CADA FILA*/
+    grid-template-rows: 100px 70PX auto 70px;
+}
+
+.header{
+    grid-area: header;
+    
+    background: rgb(134, 151, 168);
+    text-align: left;
+    font-style: italic;
+    display:flex ;
+    justify-content: center;
+
+
+}
+
+.header h1{
+    margin-left: -40px;
+    margin-top: 30px;
+}
+
+.content {
+    float: left;
+    padding: 0 10px;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+li {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+

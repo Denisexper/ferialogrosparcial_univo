@@ -82,7 +82,7 @@ body{
     transform: scale(0.80,0.80);
 }
 
-/*-- ESTILOS DEL CONTENIDO DE LAS PELICULAS ----*/
+
 .content{
     grid-area: content;
     background: #f6f7f9;
