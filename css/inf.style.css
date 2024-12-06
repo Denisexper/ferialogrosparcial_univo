@@ -33,7 +33,7 @@ body{
 .header{
     grid-area: header;
     
-    background: rgb(134, 151, 168);
+    background: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
     text-align: left;
     font-style: italic;
     display:flex ;
