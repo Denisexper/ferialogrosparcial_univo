@@ -70,6 +70,8 @@ body {
     text-align: center;
     padding: 10px;
     width: 100%;
+    bottom: 0;
+    position: absolute;
 }
 
 .footer p {
