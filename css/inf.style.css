@@ -4,31 +4,29 @@
     box-sizing: border-box;
 }
 
-body{
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
     background: #d1defa;
     font-family: Arial, Helvetica, sans-serif;
-
-    /*ALINEAR BODY*/
-
     text-align: center;
-    padding: 0px;
-    margin:0px;
 }
 
-
-.header{
+.header {
     grid-area: header;
-    
-    background: white;
+    background: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
     text-align: left;
     font-style: italic;
-    display:flex ;
+    display: flex;
     justify-content: center;
-
-
 }
 
-.header h1{
+.header h1 {
     margin-left: -40px;
     margin-top: 30px;
 }
@@ -40,6 +38,7 @@ body{
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    flex-grow: 1;  /* Esto hace que el contenido crezca y empuje el footer */
 }
 
 .content h2 {
@@ -70,9 +69,6 @@ body{
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 40px;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
 
