@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background: #d1defa;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,31 +15,11 @@ body{
     margin:0px;
 }
 
-.layout{
-    width: 100%;
-    height: auto;
-
-
-    display: grid;
-    grid-template-areas: 
-
-
-        /*NUMERO DE COLUMNAS DE CADA CLASE
-         DEL GRID TEMPLATE AREAS
-        */
-        "header header header header"
-        
-
-    ;
-
-    /*DIMENSIONES DE CADA FILA*/
-    grid-template-rows: 100px 70PX auto 70px;
-}
 
 .header{
     grid-area: header;
     
-    background: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
+    background: white;
     text-align: left;
     font-style: italic;
     display:flex ;
@@ -48,24 +34,62 @@ body{
 }
 
 .content {
-    float: left;
-    padding: 0 10px;
-    margin: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; 
+.content h2 {
+    font-size: 2rem;
+    color: #1841b3;
+    margin-bottom: 20px;
 }
 
-li {
-    font-size: 1.5em;
-    font-weight: bold;
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.content ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
     color: #333;
-    margin: 10px 0;
-    font-family: 'Arial', sans-serif;
 }
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
+
 
 
 
