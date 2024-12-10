@@ -1,8 +1,8 @@
 function wacht(button) {
     // Obtener el artículo más cercano
-    const article = button.closest('.project-item');
+    const article = button.closest('.custom-project-item');
     // Obtener la descripción (párrafo con clase 'about')
-    const description = article.querySelector('.about');
+    const description = article.querySelector('.custom-about');
 
     // Alternar la visibilidad de la descripción
     if (description.style.display === "none") {
